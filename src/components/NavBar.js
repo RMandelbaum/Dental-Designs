@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-
+import '..styles/NavBar.css';
 
 const NavBar = props => {
   return (
@@ -13,9 +13,15 @@ const NavBar = props => {
       </NavLink>
       <NavLink
         className="navbar-item"
-        to="/about"
+        to="/our-team"
       >
-        OUR MISSION
+        OUR TEAM
+      </NavLink>
+      <NavLink
+        className="navbar-item"
+        to="/services"
+      >
+        SERVICES
       </NavLink>
       <NavLink
         className="navbar-item"
@@ -28,7 +34,13 @@ const NavBar = props => {
         className="navbar-item"
         to="/contact"
       >
-        CONTACT
+        CONTACT US
+      </NavLink>
+      <NavLink
+        className="navbar-item"
+        to="/faqs"
+      >
+        FAQS
       </NavLink>
      </div>
   );
